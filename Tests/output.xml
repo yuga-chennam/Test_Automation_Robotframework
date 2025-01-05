@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240202 15:03:55.592" rpa="false" schemaversion="4">
+<suite id="s1" name="FirstRobot" source="C:\Users\chysk\PycharmProjects\RobotFramework\Tests\FirstRobot.robot">
+<test id="s1-t1" name="Validate Unsuccessful Login" line="11">
+<kw name="Start browser with test site url">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240202 15:03:55.908" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20240202 15:03:55.908" endtime="20240202 15:03:57.543"/>
+</kw>
+<status status="PASS" starttime="20240202 15:03:55.908" endtime="20240202 15:03:57.543"/>
+</kw>
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<var>${sel_speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<msg timestamp="20240202 15:03:57.544" level="INFO">${sel_speed} = 0 seconds</msg>
+<status status="PASS" starttime="20240202 15:03:57.544" endtime="20240202 15:03:57.544"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sel_speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240202 15:03:57.547" endtime="20240202 15:03:57.547"/>
+</kw>
+<kw name="Get Selenium Timeout" library="SeleniumLibrary">
+<var>${sel_timeout}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<msg timestamp="20240202 15:03:57.547" level="INFO">${sel_timeout} = 5 seconds</msg>
+<status status="PASS" starttime="20240202 15:03:57.547" endtime="20240202 15:03:57.547"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sel_timeout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240202 15:03:57.551" endtime="20240202 15:03:57.554"/>
+</kw>
+<kw name="Fill and Submit the login form">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:user-name</arg>
+<arg>demouser123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240202 15:03:57.558" level="INFO">Typing text 'demouser123' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20240202 15:03:57.554" endtime="20240202 15:03:58.287"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>demo123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240202 15:03:58.291" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20240202 15:03:58.336" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240202 15:03:58.403" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240202 15:03:58.291" endtime="20240202 15:03:58.403"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240202 15:03:58.403" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20240202 15:03:58.403" endtime="20240202 15:03:58.470"/>
+</kw>
+<status status="PASS" starttime="20240202 15:03:57.554" endtime="20240202 15:03:58.470"/>
+</kw>
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<var>${sel_speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<msg timestamp="20240202 15:03:58.470" level="INFO">${sel_speed} = 0 seconds</msg>
+<status status="PASS" starttime="20240202 15:03:58.470" endtime="20240202 15:03:58.470"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sel_speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240202 15:03:58.470" endtime="20240202 15:03:58.470"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240202 15:03:58.470" endtime="20240202 15:03:58.470"/>
+</kw>
+<kw name="Get Selenium Timeout" library="SeleniumLibrary">
+<var>${sel_timeout}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<msg timestamp="20240202 15:03:58.470" level="INFO">${sel_timeout} = 5 seconds</msg>
+<status status="PASS" starttime="20240202 15:03:58.470" endtime="20240202 15:03:58.470"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sel_timeout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240202 15:03:58.470" endtime="20240202 15:03:58.470"/>
+</kw>
+<kw name="verify the error message">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Actual_Error_msg}</var>
+<arg>${Error_msg_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240202 15:03:58.512" level="INFO">${Actual_Error_msg} = Epic sadface: Username and password do not match any user in this service</msg>
+<status status="PASS" starttime="20240202 15:03:58.470" endtime="20240202 15:03:58.512"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${Actual_Error_msg}</arg>
+<arg>${Expected_Error_msg}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20240202 15:03:58.512" endtime="20240202 15:03:58.512"/>
+</kw>
+<status status="PASS" starttime="20240202 15:03:58.470" endtime="20240202 15:03:58.512"/>
+</kw>
+<status status="PASS" starttime="20240202 15:03:55.908" endtime="20240202 15:03:58.512"/>
+</test>
+<doc>Validate login functionality for Invalid Creds</doc>
+<status status="PASS" starttime="20240202 15:03:55.592" endtime="20240202 15:03:58.512"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="FirstRobot">FirstRobot</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240202 15:03:55.908" level="ERROR">Error in file 'C:\Users\chysk\PycharmProjects\RobotFramework\Tests\FirstRobot.robot' on line 4: Library 'customLibraries\Shop.py' does not exist.</msg>
+</errors>
+</robot>

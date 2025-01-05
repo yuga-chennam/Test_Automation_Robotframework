@@ -1,0 +1,20 @@
+1702537453423	geckodriver	INFO	Listening on 127.0.0.1:56889
+1702537456485	mozrunner::runner	INFO	Running command: "C:\\Users\\chysk\\.cache\\selenium\\firefox\\win64\\120.0.1\\firefox.exe" "--marionette" "--remote-debuggin ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\chysk\\AppData\\Local\\Temp\\rust_mozprofileG0fNyc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1702537459526	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1702537459714	Marionette	INFO	Listening on port 56928
+WebDriver BiDi listening on ws://127.0.0.1:56890
+Read port: 56928
+1702537459940	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56890/devtools/browser/a4fe290d-9c21-4369-8fdc-50202c8d36ca
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1702537489732	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://www.saucedemo.com/static/js/2.9b02e67e.chunk.js, line 2: Script terminated by timeout at:
+value@https://www.saucedemo.com/static/js/2.9b02e67e.chunk.js:2:120306
+value@https://www.saucedemo.com/static/js/2.9b02e67e.chunk.js:2:116800
+r/936/n/7429/value/<@https://www.saucedemo.com/static/js/2.9b02e67e.chunk.js:2:51363
+
+1702537690989	Marionette	INFO	Stopped listening on port 56928
+Dynamically enable window occlusion 1

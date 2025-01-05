@@ -1,0 +1,4 @@
+*** Test Cases ***, ${username}, ${password}
+Invalid username, fsdfdsgf, secret_sauce
+Invalid password, standard_user, demo345988df
+Special chars, deo^%#!ss%@$, secret@#$%

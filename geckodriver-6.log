@@ -1,0 +1,23 @@
+1703065995752	geckodriver	INFO	Listening on 127.0.0.1:63340
+1703065998819	mozrunner::runner	INFO	Running command: "C:\\Users\\chysk\\.cache\\selenium\\firefox\\win64\\121.0\\firefox.exe" "--marionette" "--remote-debugging- ... 1" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\chysk\\AppData\\Local\\Temp\\rust_mozprofilexA3cl5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1703066002425	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1703066002573	Marionette	INFO	Listening on port 63370
+WebDriver BiDi listening on ws://127.0.0.1:63341
+Read port: 63370
+1703066002819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63341/devtools/browser/ed6f2b03-196b-482f-9f30-44c8707d61d0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1703066023201	Marionette	INFO	Stopped listening on port 63370
+Dynamically enable window occlusion 1
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
